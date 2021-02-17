@@ -49,7 +49,7 @@ client.on('ready', () => {
   commandManager.addCommand('removeVoiceRoles', removeVoiceRoles)
   commandManager.addModule('ticket', ticketManager)
 
-  client.user.setActivity("the howols of the dead and forgotten", {
+  client.user.setActivity("the howls of the dead and forgotten", {
       type: "LISTENING"
   });
 
