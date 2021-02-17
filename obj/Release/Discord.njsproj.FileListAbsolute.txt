@@ -1,0 +1,5 @@
+C:\Users\Admin\source\repos\discord\obj\Release\Discord.njsproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\discord\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\Admin\source\repos\_discord\obj\Release\Discord.njsprojAssemblyReference.cache
+C:\Users\Admin\source\repos\_discord\obj\Release\Discord.njsproj.CoreCompileInputs.cache
+C:\Users\Admin\source\repos\_discord\bin\Microsoft.NodejsTools.WebRole.dll

@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{09fa6e1a-30e4-4dd5-b434-4e0808c038e7}</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <ProjectView>ShowAllFiles</ProjectView>
+    <StartupFile>src\index.js</StartupFile>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <ProjectTypeGuids>{3AF33F2E-1136-4D97-BBB7-1795711AC8B8};{349c5851-65df-11da-9384-00065b846f21};{9092AA53-FB77-4645-B42D-1CCCA6BD08BD}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">16.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <StartWebBrowser>False</StartWebBrowser>
+    <SaveNodeJsSettingsInProjectFile>True</SaveNodeJsSettingsInProjectFile>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'" />
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'" />
+  <ItemGroup>
+    <Content Include="package-lock.json" />
+    <Content Include="package.json" />
+    <Content Include="README.md" />
+    <Content Include=".eslintrc.js" />
+    <Content Include="config\config.json" />
+    <Content Include="migrations\20200426200323-create-prefix.js" />
+    <Content Include="migrations\20200427185706-create-nickname.js" />
+    <Content Include="migrations\20200429223813-create-user-word.js" />
+    <Content Include="migrations\20200508235446-create-banned-name.js" />
+    <Content Include="migrations\20200610210952-create-ticket-form.js" />
+    <Content Include="migrations\20200611035221-create-ticket.js" />
+    <Content Include="migrations\20200611230201-add_references.js" />
+    <Content Include="migrations\20200612101549-add-ticket-state.js" />
+    <Content Include="migrations\20200613164034-create-ticket-role.js" />
+    <Content Include="migrations\20200613195907-add-form-state.js" />
+    <Content Include="migrations\20201010041919-create-voice-role.js" />
+    <Content Include="models\bannedname.js" />
+    <Content Include="models\formfield.js" />
+    <Content Include="models\index.js" />
+    <Content Include="models\nickname.js" />
+    <Content Include="models\prefix.js" />
+    <Content Include="models\ticket.js" />
+    <Content Include="models\ticketfield.js" />
+    <Content Include="models\ticketform.js" />
+    <Content Include="models\ticketrole.js" />
+    <Content Include="models\userword.js" />
+    <Content Include="models\voicerole.js" />
+    <Content Include="secrets\token.js">
+      <SubType>Code</SubType>
+    </Content>
+    <Content Include="src\afkReply.js" />
+    <Content Include="src\checkUserWords.js" />
+    <Content Include="src\commandManager.js" />
+    <Content Include="src\index.js" />
+    <Content Include="src\instaBan.js" />
+    <Content Include="src\voiceRole.js" />
+    <Content Include="src\commands\addVoiceRole.js" />
+    <Content Include="src\commands\afk.js" />
+    <Content Include="src\commands\banName.js" />
+    <Content Include="src\commands\deleteImages.js" />
+    <Content Include="src\commands\help.js" />
+    <Content Include="src\commands\lego.js" />
+    <Content Include="src\commands\muteUserWord.js" />
+    <Content Include="src\commands\removeVoiceRoles.js" />
+    <Content Include="src\commands\talkBack.js" />
+    <Content Include="src\commands\unbanName.js" />
+    <Content Include="src\commands\unmuteUserWord.js" />
+    <Content Include="src\modules\module.js" />
+    <Content Include="src\util\checkPerm.js" />
+    <Content Include="src\util\getPrefix.js" />
+    <Content Include="src\util\printHelp.js" />
+    <Content Include="src\util\RoleManager.js" />
+    <Content Include="src\modules\tickets\formCreator.js" />
+    <Content Include="src\modules\tickets\formManager.js" />
+    <Content Include="src\modules\tickets\ticketCreator.js" />
+    <Content Include="src\modules\tickets\ticketManager.js" />
+    <Content Include="src\modules\tickets\util\selectForm.js" />
+    <Content Include="src\modules\tickets\util\selectTicket.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="config" />
+    <Folder Include="Discord" />
+    <Folder Include="migrations" />
+    <Folder Include="models" />
+    <Folder Include="secrets" />
+    <Folder Include="src" />
+    <Folder Include="src\commands" />
+    <Folder Include="src\modules" />
+    <Folder Include="src\modules\tickets" />
+    <Folder Include="src\modules\tickets\util" />
+    <Folder Include="src\util" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>0</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:48022/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>True</UseCustomServer>
+          <CustomServerUrl>http://localhost:1337</CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}" User="">
+        <WebProjectProperties>
+          <StartPageUrl>
+          </StartPageUrl>
+          <StartAction>CurrentPage</StartAction>
+          <AspNetDebugging>True</AspNetDebugging>
+          <SilverlightDebugging>False</SilverlightDebugging>
+          <NativeDebugging>False</NativeDebugging>
+          <SQLDebugging>False</SQLDebugging>
+          <ExternalProgram>
+          </ExternalProgram>
+          <StartExternalURL>
+          </StartExternalURL>
+          <StartCmdLineArguments>
+          </StartCmdLineArguments>
+          <StartWorkingDirectory>
+          </StartWorkingDirectory>
+          <EnableENC>False</EnableENC>
+          <AlwaysStartWebServerOnDebug>False</AlwaysStartWebServerOnDebug>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>
