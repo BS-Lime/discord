@@ -49,7 +49,7 @@ client.on('ready', () => {
   commandManager.addCommand('removeVoiceRoles', removeVoiceRoles)
   commandManager.addModule('ticket', ticketManager)
 
-  client.user.setActivity("to depression", {
+  client.user.setActivity("the voices in my head", {
       type: "LISTENING"
   });
 
