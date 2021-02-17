@@ -28,7 +28,10 @@ const activities_list = [
     "the howls of the dead and forgotten",
     "hunty's permanent cries for burger",
     "alber's wise words",
-    "important people only"
+    "important people only",
+    "wrap",
+    "bad advice",
+    "an echo chamber"
 ];
 
 sequelize
@@ -60,10 +63,9 @@ client.on('ready', () => {
 
 
     setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1); // generates a random number between 1 and the length of the activities array list (in this case 5).
-        client.user.setActivity(activities_list[index], { type: 'LISTENING' }); // sets bot's activities to one of the phrases in the arraylist.
-    }, 300000); // Runs this every 5 minutes.
-
+        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+        client.user.setActivity(activities_list[index], { type: 'LISTENING' });
+    }, 300000);
 
     afkReply(client)
     checkUserWords(client)
