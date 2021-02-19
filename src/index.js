@@ -65,6 +65,7 @@ client.on('ready', () => {
     setInterval(() => {
         const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
         client.user.setActivity(activities_list[index], { type: 'LISTENING' });
+        console.log('Set status to: Listening to ' + activities_list[index])
     }, 30000);
 
     afkReply(client)
