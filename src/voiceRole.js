@@ -18,7 +18,8 @@ module.exports = (client) => {
 
       voiceRoles.forEach((voiceRole) => {
         user = oldState.member
-        roleDiff.remove.push(voiceRole.roleId)
+          roleDiff.remove.push(voiceRole.roleId)
+          console.log('Removed' + voiceRole.roleId + 'from' + user + 'in' + channelId 'on' serverId)
       })
     }
 
@@ -32,7 +33,8 @@ module.exports = (client) => {
 
       voiceRoles.forEach((voiceRole) => {
         user = newState.member
-        roleDiff.add.push(voiceRole.roleId)
+          roleDiff.add.push(voiceRole.roleId)
+          console.log('Added' + voiceRole.roleId + 'to' + user + 'in' + channelId 'on' serverId)
       })
     }
 
