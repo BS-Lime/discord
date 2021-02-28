@@ -58,7 +58,7 @@ client.on('ready', () => {
     commandManager.addCommand('unbanName', unbanName)
     commandManager.addCommand('addVoiceRole', addVoiceRole)
     commandManager.addCommand('removeVoiceRoles', removeVoiceRoles)
-    commandManager.addCommand('yote', removeVoiceRoles)
+    commandManager.addCommand('yote', yote)
     commandManager.addModule('ticket', ticketManager)
 
 
