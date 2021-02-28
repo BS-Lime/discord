@@ -8,6 +8,6 @@ const coyote_noises= [
 ];
 
 module.exports = function (message, onlyPayload) {
-    const index = Math.floor(Math.random() * (coyote_noises.length - 1) + 1);
-    message.channel.send(coyote_noises[index]);
+    const yote_index = Math.floor(Math.random() * (coyote_noises.length - 1) + 1);
+    message.channel.send(coyote_noises[yote_index]);
     } 
