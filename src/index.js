@@ -22,7 +22,7 @@ const checkUserWords = require('./checkUserWords')
 const instaBan = require('./instaBan')
 const voiceRole = require('./voiceRole')
 const ticketManager = require('./modules/tickets/ticketManager')
-const help = require('./commands/yote')
+const yote = require('./commands/yote')
 const help = require('./commands/help')
 
 const activities_list = [
