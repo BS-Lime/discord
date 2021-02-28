@@ -4,7 +4,7 @@ const coyote_noises= [
     "baaaaa",
     "bababawholesomebababab",
     "hawawawawa",
-    "*in alber noise* AWeehhh ish me, da boi",
+    "*in alber noise* AWeehhh ish me, da boi"
 ];
 
 module.exports = function (message, onlyPayload) {
