@@ -23,6 +23,7 @@ const instaBan = require('./instaBan')
 const voiceRole = require('./voiceRole')
 const ticketManager = require('./modules/tickets/ticketManager')
 const yote = require('./commands/yote')
+const alber = require('./commands/alber')
 const help = require('./commands/help')
 
 const activities_list = [
@@ -32,7 +33,8 @@ const activities_list = [
     "important people only",
     "wrap",
     "bad advice",
-    "an echo chamber"
+    "an echo chamber",
+    "vsauce music"
 ];
 
 sequelize
@@ -59,6 +61,7 @@ client.on('ready', () => {
     commandManager.addCommand('addVoiceRole', addVoiceRole)
     commandManager.addCommand('removeVoiceRoles', removeVoiceRoles)
     commandManager.addCommand('yote', yote)
+    commandManager.addCommand('alber', alber)
     commandManager.addModule('ticket', ticketManager)
 
 

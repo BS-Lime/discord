@@ -51,6 +51,9 @@
     <Content Include="src\afkReply.js" />
     <Content Include="src\checkUserWords.js" />
     <Content Include="src\commandManager.js" />
+    <Content Include="src\commands\alber.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\commands\yote.js">
       <SubType>Code</SubType>
     </Content>
