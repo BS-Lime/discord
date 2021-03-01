@@ -10,14 +10,14 @@
  * @param {string} helpTopics[].description further explanation for that command, will be appended
  */
 module.exports = (channel, base, helpTopics) => {
-  channel.send({
-    embed: {
-      fields: helpTopics.map(topic => {
-        return {
-          name: topic.name,
-          value: `\`${base}${topic.name}${topic.params != null ? ` ${topic.params}` : ''}\`${topic.description ? `: ${topic.description}` : ''}`
+    channel.send({
+        embed: {
+            fields: helpTopics.map(topic => {
+                return {
+                    name: topic.name,
+                    value: `\`${base}${topic.name}${topic.params != null ? ` ${topic.params}` : ''}\`${topic.description ? `: ${topic.description}` : ''}`
+                }
+            })
         }
-      })
-    }
-  })
+    })
 }
