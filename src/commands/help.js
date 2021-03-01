@@ -1,10 +1,9 @@
 const printHelp = require('../util/printHelp')
 const getPrefix = require('../util/getPrefix')
-const checkPerm = require('../util/checkPerm')
 
 
-module.exports = (message) => {
-    getPrefix(message).then((prefix) => {
+//module.exports = (message) => {
+//    getPrefix(message).then((prefix) => {
 
         //    printHelp(message.channel, prefix, [
         //        { name: 'afk', description: 'Toggle afk mode - this will inform anyone mentioning you that you are away' },
@@ -22,13 +21,14 @@ module.exports = (message) => {
         //        { name: 'alber', description: `gives you out a random alber quote` }
         //    ])
         //}
-
+module.exports = (message) => {
+    getPrefix(message).then((prefix) => {
         printHelp(message.channel, prefix, [
-            { name: 'afk', description: 'Toggle afk mode - this will inform anyone mentioning you that you are away' },
-            { name: 'lego', params: '<official setId>', description: 'will pull the link to this set from brickset.com' },
-            { name: 'ticket', params: '<command>', description: `interact with tickets - type \`${prefix}ticket\` for more info` },
-            { name: 'yote', description: `makes random coyote noises` },
-            { name: 'alber', description: `gives you out a random alber quote` }
+            {name: 'afk', description: 'Toggle afk mode - this will inform anyone mentioning you that you are away'},
+            {name: 'lego', params: '<official setId>', description: 'will pull the link to this set from brickset.com'},
+            {name: 'ticket', params: '<command>', description: `interact with tickets - type \`${prefix}ticket\` for more info`},
+            {name: 'yote', description: `makes random coyote noises`},
+            {name: 'alber', description: `gives you out a random alber quote`}
         ])
 
     })
