@@ -43,6 +43,7 @@ function parseNotation(notation) {
         failed: false,
         errorcode: 0,
         counts: {
+            "420": 0,
             "100": 0,
             "20": 0,
             "12": 0,
