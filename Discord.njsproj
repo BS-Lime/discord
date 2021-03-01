@@ -54,6 +54,9 @@
     <Content Include="src\commands\alber.js">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="src\commands\roll.js">
+      <SubType>Code</SubType>
+    </Content>
     <Content Include="src\commands\yote.js">
       <SubType>Code</SubType>
     </Content>
