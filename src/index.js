@@ -24,7 +24,7 @@ const voiceRole = require('./voiceRole')
 const ticketManager = require('./modules/tickets/ticketManager')
 const yote = require('./commands/yote')
 const alber = require('./commands/alber')
-    const roll = require('./commands/roll')
+const roll = require('./commands/roll')
 const help = require('./commands/help')
 
 const activities_list = [

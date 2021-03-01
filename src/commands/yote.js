@@ -1,4 +1,3 @@
-const getPrefix = require('../util/getPrefix')
 const coyote_noises= [
     "hababababa",
     "baaaaa",
