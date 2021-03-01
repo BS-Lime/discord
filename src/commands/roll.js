@@ -1,5 +1,5 @@
 const getPrefix = require('../util/getPrefix')
-const validDice = [4, 6, 8, 10, 12, 20, 100]
+const validDice = [4, 6, 8, 10, 12, 20, 100, 420]
 const DEBUG = process.env.DEBUG || false
 
 module.exports = function (message, onlyPayload) {
