@@ -8,6 +8,7 @@ module.exports = (message) => {
             { name: 'lego', params: '<official setId>', description: 'will pull the link to this set from brickset.com' },
             { name: 'alber', description: 'will give you a random alber quote' },
             { name: 'yote', description: 'makes random coyote noises' }
+            { name: 'roll', params:'<d4, d6, d8, d10, d12, d20, d100, d420>', description: 'Rolls a dice. Stuff like 2d4 works as well' },
             //{ name: 'setPrefix', params: 'newPrefix', description: 'bind the bot to this new prefix' },
             //{ name: 'muteUserWord', params: '<user> <word>', description: 'prevent that user from saying that word (case sensitive)' },
             //{ name: 'unmuteUserWord', params: '<user>', description: 'clear all mute words for that user' },
