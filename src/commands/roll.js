@@ -1,6 +1,7 @@
 const getPrefix = require('../util/getPrefix')
 const validDice = [4, 6, 8, 10, 12, 20, 100, 420]
 const DEBUG = process.env.DEBUG || false
+let nice = false
 
 module.exports = function (message, onlyPayload) {
     let reply = ""
@@ -11,7 +12,7 @@ module.exports = function (message, onlyPayload) {
         })
             if (DEBUG) { message.reply('Error code: ' + diceobj.errorcode) }
             return
-        }
+    }
         for (let [dicevalue, count] of Object.entries(diceobj.counts)) {
             if (count < 1) {
                 continue
@@ -23,17 +24,27 @@ module.exports = function (message, onlyPayload) {
             let valuesString = ""
             for (let value of rolledValues) {
                 valuesString += "  `" + value + "`"
+                if (value == 69) {
+                    nice = true
+                }
             }
             if (count == 1) {
                 count = ""
             }
             reply += count + "d" + dicevalue + ":" + valuesString + "\n"
+
         }
     if (reply == "") {
         message.reply("There are no dice to roll! Please check your notation.")
         return
     }
     message.reply("\n" + reply)
+
+    if (nice) {
+        message.reply("nice")
+        nice = false
+    }
+
     return
 }
 
