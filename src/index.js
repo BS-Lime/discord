@@ -35,7 +35,8 @@ const activities_list = [
     "wrap",
     "bad advice",
     "an echo chamber",
-    "vsauce music"
+    "vsauce music",
+"Hyena Cackles"
 ];
 
 sequelize
