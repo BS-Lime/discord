@@ -5,6 +5,7 @@ const alber_quotes = [
     "it would be much easier if i wasn't inside the mouth",
     "I'm a big, stinky, dumb dumb",
     "im resting my hand",
+    "NOwO",
     "hewwoooooooooo"
 ];
 
