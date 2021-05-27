@@ -36,6 +36,7 @@ const activities_list = [
     "bad advice",
     "an echo chamber",
     "vsauce music",
+    "Alber crying with strawberry cake",
 "Hyena Cackles"
 ];
 
