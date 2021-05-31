@@ -46,6 +46,10 @@ const game_list = [
     "with yotes",
     "alone",
     "with Hunty's food",
+    "with your feelings",
+    "with fire",
+    "with the server config “w”",
+    "with your private data",
     "with -Lime's internet",
     "with mains electricity",
     "dumb"
