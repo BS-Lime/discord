@@ -40,6 +40,17 @@ const activities_list = [
 "Hyena Cackles"
 ];
 
+const game_list = [
+    "with eggs",
+    "with yeens",
+    "with yotes",
+    "alone",
+    "with Hunty's food",
+    "with -Lime's internet",
+    "with mains electricity",
+    "dumb"
+];
+
 sequelize
     .authenticate()
     .then(() => {
@@ -71,10 +82,16 @@ client.on('ready', () => {
 
 
 
+    //setInterval(() => {
+    //    const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
+    //    client.user.setActivity(activities_list[index], { type: 'LISTENING' });
+    //    console.log('Set status to: Listening to ' + activities_list[index])
+    //}, 300000);
+
     setInterval(() => {
-        const index = Math.floor(Math.random() * (activities_list.length - 1) + 1);
-        client.user.setActivity(activities_list[index], { type: 'LISTENING' });
-        console.log('Set status to: Listening to ' + activities_list[index])
+        const index = Math.floor(Math.random() * (game_list.length - 1) + 1);
+        client.user.setActivity(game_list[index], { type: 'PLAYING' });
+        console.log('Set status to: Playing' + game_list[index])
     }, 300000);
 
     afkReply(client)
