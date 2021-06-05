@@ -51,6 +51,7 @@ const game_list = [
     "with the server config “w”",
     "with your private data",
     "with -Lime's internet",
+    "with the light switch",
     "with mains electricity",
     "dumb"
 ];
