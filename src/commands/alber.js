@@ -7,6 +7,7 @@ const alber_quotes = [
     "im resting my hand",
     "NOwO",
     "Am I your burger daddy",
+    "I'd bite a child",
     "hewwoooooooooo"
 ];
 
