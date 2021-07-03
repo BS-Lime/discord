@@ -8,6 +8,7 @@ const alber_quotes = [
     "NOwO",
     "Am I your burger daddy",
     "I'd bite a child",
+    "would lick";
     "hewwoooooooooo"
 ];
 
